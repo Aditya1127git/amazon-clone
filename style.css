@@ -1,0 +1,125 @@
+*{
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    border: border-box;
+}
+.navbar{
+    height: 60px;
+    background-color: #000000;
+    color:white;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.nav-logo{
+    height:50px;
+    width:100px;
+}
+
+.logo{
+    background-image:url("amazon2.webp");
+    height: 50px;
+    width:100px;
+    background-size:cover;
+}
+.border{
+    border: 2px solid transparent;
+    transition: all 1s ease;
+}
+
+.border:hover{
+    transform:scale(1.05);
+    border: 2.5px solid rgb(182, 184, 180);
+}
+
+.add-first{
+    color: #cccccc;
+    font-size: 0.85rem;
+    margin-left: 19px;
+}
+
+.add-icon{
+    display: flex;
+    align-items:center;
+}
+
+
+/**box3**/
+.nav-search{
+    display:flex;
+    background-color:#febd68;
+    width:620px;
+    height: 40px;
+    margin-left: 10px;
+    border-radius:4.7px;
+    justify-content: space-evenly;
+}
+.search-select{
+    border-top-left-radius: 4.7px;
+    border-bottom-left-radius:4.5px;
+    background-color: #f3f3f3;
+    color:rgba(0,0,0,0.6);
+    padding:5px;
+    text-align:center;
+    border:none;
+    font-weight:bold;
+}
+
+.search-input{
+    width: 100%;
+    font-size: 1rem;
+    border: none;
+}
+
+.search-icon{
+    width:50px;
+    display:flex;
+    justify-content:center;
+    align-self: center;
+    font-size:1.5rem;
+    color:#000000
+    
+}
+
+/**box4**/
+span{
+    font-size: 0.7rem;
+}
+
+.nav-sec{
+    font-size:0.85rem;
+    font-weight:700;
+}
+
+.nav-cart i{
+    font-size: 30px;
+}
+
+.nav-cart{
+    font-size:0.85rem;
+}
+
+.panel{
+    height:40px;
+    background-color:#222f3d;
+    display:flex;
+    color:white;
+    align-items:center;
+    justify-content:space-evenly;
+
+}
+.panel-ops p{
+    display:inline;
+    margin-left:15px;
+    
+}
+
+.panel-ops{
+    width:80%;
+    font-size:0.85rem;
+}
+
+.panel-deals{
+    font-size:0.9rem;
+    font-weight:700;
+}
