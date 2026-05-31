@@ -25,6 +25,7 @@
 .border{
     border: 2px solid transparent;
     transition: all 1s ease;
+    margin:auto 5px;
     
 }   
 
@@ -47,14 +48,48 @@
 
 /**box3**/
 .nav-search{
-    display:flex;
+    display:flex;position: relative;
     background-color:#febd68;
     width:620px;
     height: 40px;
     margin-left: 10px;
     border-radius:4.7px;
     justify-content: space-evenly;
+    
 }
+.nav-search::before{
+    content: "";
+    position: absolute;
+
+    width: 40px;
+    height: 3px;
+
+    background: #ffff00;
+
+box-shadow:
+0 0 5px #ffff00,
+0 0 10px #ffff00,
+0 0 20px #ffff00,
+0 0 40px #ffff00;
+
+    top: 0;
+    left: 0;
+
+    animation: moveGlow 3s linear infinite;
+}
+
+
+
+@keyframes moveGlow{
+    from{
+        left:0;
+    }
+
+    to{
+        left:calc(100% - 40px);
+    }
+}
+
 .search-select{
     border-top-left-radius: 4.7px;
     border-bottom-left-radius:4.5px;
