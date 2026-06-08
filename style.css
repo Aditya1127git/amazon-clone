@@ -55,22 +55,18 @@
     margin-left: 10px;
     border-radius:4.7px;
     justify-content: space-evenly;
+    overflow: hidden;
     
 }
 .nav-search::before{
     content: "";
     position: absolute;
 
-    width: 40px;
+    width: 400px;
     height: 3px;
-
     background: #ffff00;
 
-box-shadow:
-0 0 5px #ffff00,
-0 0 10px #ffff00,
-0 0 20px #ffff00,
-0 0 40px #ffff00;
+    
 
     top: 0;
     left: 0;
@@ -81,14 +77,33 @@ box-shadow:
 
 
 @keyframes moveGlow{
-    from{
+
+    0%{
+        top:0;
         left:0;
     }
 
-    to{
-        left:calc(100% - 40px);
+    25%{
+        top:0;
+        left:220px;
+    }
+
+    50%{
+        top:37px;
+        left:220px;
+    }
+
+    75%{
+        top:37px;
+        left:0;
+    }
+
+    100%{
+        top:0;
+        left:0;
     }
 }
+
 
 .search-select{
     border-top-left-radius: 4.7px;
