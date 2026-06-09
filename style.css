@@ -12,7 +12,7 @@
     justify-content: space-evenly;
 }
 .nav-logo{
-    height:50px;
+    height:60px;
     width:100px;
 }
 
@@ -31,11 +31,11 @@
 
 .border:hover{
     transform:scale(1.05);
-    border: 2.5px solid rgb(182, 184, 180);
+    border: 2.5px solid rgb(106, 172, 40);
 }
 
 .add-first{
-    color: #cccccc;
+    color: #eea3a3;
     font-size: 0.85rem;
     margin-left: 19px;
 }
@@ -43,6 +43,7 @@
 .add-icon{
     display: flex;
     align-items:center;
+    justify-content: center;
 }
 
 
